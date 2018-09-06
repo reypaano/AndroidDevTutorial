@@ -13,5 +13,12 @@ public class OtherActivity extends AppCompatActivity {
 
         //Toast Message
         Toast.makeText(this, "Intent Success!", Toast.LENGTH_LONG).show();
+
+        //Receive the data passed (putextra)
+         Bundle bundle = getIntent().getExtras();
+         String str = bundle.getString("Key");
+
+         Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
+
     }
 }

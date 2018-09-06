@@ -68,6 +68,8 @@ import android.widget.Button;
 //                startActivity(myIntent);
 
                 Intent myIntent = new Intent(Intent.ACTION_VIEW);
+                //adding "extra" that will be passed to the intent
+                myIntent.putExtra("Key", "This is the Value..");
                 startActivity(myIntent);
                 break;
 
